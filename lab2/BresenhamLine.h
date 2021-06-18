@@ -32,6 +32,7 @@ void BresenhamLine()
         x = x1; y = y1;
         p0 = 2 * dy - dx;
 
+        // for decision parameters
         if (dx > dy) {
             for (int i = 0; i < dx; i++) {
                 if (p0 < 0) {
@@ -61,7 +62,7 @@ void BresenhamLine()
             }
         }
 
-        cout << "Wanna continue? (y/n)";
+        cout << "Wanna continue? (y/n) ";
         cin >> ans;
     } while (ans == 'y');
 }

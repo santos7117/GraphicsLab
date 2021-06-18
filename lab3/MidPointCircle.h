@@ -28,9 +28,9 @@ void MidPointCircle()
 
     do {
 
-        cout << "Enter the center of the circle :";
+        cout << "Enter center of the circle :";
         cin >> xc >> yc;
-        cout << "Enter the radius of the circle :";
+        cout << "Enter radius of the circle :";
         cin >> r;
 
         x = 0;
@@ -41,6 +41,7 @@ void MidPointCircle()
 
             plot(xc, yc, x, y);
 
+            // determine next decision parameter
             if (p < 0)
                 p = p + 2 * x + 1;
             else {
@@ -51,7 +52,7 @@ void MidPointCircle()
 
         } while (x < y);
 
-        cout << "Wanna continue? (y/n)";
+        cout << "Wanna continue? (y/n) ";
         cin >> ans;
     } while (ans == 'y');
 

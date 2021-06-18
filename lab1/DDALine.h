@@ -31,6 +31,7 @@ void DDALine()
 		dx = dx / step;
 		dy = dy / step;
 
+		// cast into int coordinates and plot
 		for (index i{ 0 }, x=x1, y=y1; i <= step; ++i)
 		{
 			putpixel(static_cast<int>(x), static_cast<int>(y), colors::GREEN);
@@ -39,7 +40,7 @@ void DDALine()
 			y = y + dy;
 		}
 		
-		cout << "Wanna continue? (y/n)";
+		cout << "Wanna continue? (y/n) ";
 		cin >> ans;
 	} while (ans == 'y');
 }
